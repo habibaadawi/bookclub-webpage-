@@ -1,0 +1,31 @@
+.text1
+{
+    
+padding-top: .00005%;
+padding-left: 33%;
+color:#961B23;
+font-size: 60PX;
+font-family: Georgia, 'Times New Roman', Times, serif;
+position: relative;
+   
+}
+
+    
+.text2
+{
+    width: 220px; height:120px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+  .image{
+    
+    width: 200px;height: 300px;
+    position: relative;
+    border: 10px solid #A9A9A9;
+    background-size: 200px 300px;
+
+  }
+
+  book { margin: 20px;}
+

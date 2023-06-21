@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Traffic</title>
+    <style>
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .bookDetails {
+        display: flex;
+        margin-left: 50px;
+        width: 70%;
+        margin-top: 30px;
+      }
+
+      .bookImg {
+        width: 300px;
+        height: 450px;
+        margin-right: 40px;
+        border: 5px solid #d3d3d3;
+        transition: all 0.5s ease;
+      }
+
+      .bookImg:hover {
+        transform: scale(1.1);
+        border-color: gray;
+      }
+
+      .bookInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .bookTitle {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .bookAuthor {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .bookDescription {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+    
+   
+
+    /*  sidebar section */      
+      .sidebar {
+        background-color: #f1f1f1;
+        height: 100%;
+        width: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      .sidebar a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+      }
+
+      .sidebar a:hover {
+        background-color: #ddd;
+      }
+
+      /*  styles for comments section */
+       .commentSection {
+        margin-top: 50px;
+        padding: 20px;
+        border: 2px solid #d3d3d3;
+      }
+
+      .commentSection h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .commentSection form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+      .commentSection label {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .commentSection input[type="text"],
+      .commentSection textarea {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #d3d3d3;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      .commentSection input[type="submit"] {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .commentSection input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      .commentSection .comments {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .commentSection .comment {
+        margin-bottom: 20px;
+      }
+
+      .commentSection .comment h4 {
+        font-size: 20
+      }
+
+      .comments-section {
+       width: 80%;
+      margin: 0 auto;
+     }
+
+    </style>
+  </head>
+
+  <body>
+    <!--book details-->
+    <div class="bookDetails">
+      <img
+        class="bookImg"
+        alt="Traffic by Tom Vanderbilt"
+        title="Traffic by Tom Vanderbilt"
+        src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320428955l/2776527._SX98_.jpg"
+      />
+      <div class="bookInfo">
+        <h1 class="bookTitle">Traffic</h1>
+        <h2 class="bookAuthor">Traffic by Tom Vanderbilt</h2>
+        <p class="bookDescription">
+         Based on exhaustive research and interviews with driving experts and traffic officials around the<br>globe, Traffic gets under the hood of the everyday activity of driving to uncover the surprisingly <br>complex web of physical, psychological, and technical factors that explain how traffic works, why we drive <br>the way we do, and what our driving says about us. Vanderbilt examines the perceptual limits and cognitive<br> underpinnings that make us worse drivers than we think we are. He demonstrates why plans to <br>protect pedestrians from cars often lead to more accidents. He shows how roundabouts, which can feel <br>dangerous and chaotic, actually make roads safer--and reduce traffic in the bargain. He uncovers who is more<br> likely to honk at whom, and why. He explains why traffic jams form, outlines the unintended <br>consequences of our quest for safety, and even identifies the most common mistake drivers make in parking lots.--From publisher description.
+        </p>
+      </div>
+    </div>
+
+ 
+    
+    <!--comments section-->
+    <div class="commentSection">
+  <h3>Comments</h3>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="comment">Comment:</label>
+    <textarea id="comment" name="comment" required></textarea><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <div class="comments">
+    <div class="comment">
+      <h4>mariam hossam</h4>
+      <p>not the best of all books </p>
+    </div>
+    <div class="comment">
+      <h4>hanna mohammed</h4>
+      <p>nice book!</p>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+</html>

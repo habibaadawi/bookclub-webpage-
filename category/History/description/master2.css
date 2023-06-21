@@ -1,0 +1,50 @@
+.title{
+    
+    position: relative;
+    left: 43%;
+    top:14%;
+    font-weight: 1000;
+    font-size:xx-large;
+    color:#0072bb;
+    
+}
+.subtitle{
+font-size:x-large;
+font-weight: 1000;
+position: relative;
+left:43%;
+top:15%;
+
+}
+.description1{
+    position: relative;
+    left:43%;
+    top:14%;
+    font-weight: 1000;
+    font-size:x-large;
+}
+.description2{
+    position: relative;
+    left: 43%;
+    top:18%;
+    font-size:x-large;
+    max-width:30em;
+}
+.book{
+    width: 400;height: 500;
+    background-image: URL(Ancient.jpg);
+    position: absolute;
+    left:5%;top:20%;
+    border: 10px solid #A9A9A9;
+    background-size: 400px 520px;
+}
+
+
+.book2{
+    width: 400;height: 500;
+    background-image: URL(The\ Great\ Pyramid.jpg);
+  position: absolute;
+    left:5%;top:20%;
+    border: 10px solid #A9A9A9;
+    background-size: 400px 520px ;
+}

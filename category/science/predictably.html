@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Traffic</title>
+    <style>
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .bookDetails {
+        display: flex;
+        margin-left: 50px;
+        width: 70%;
+        margin-top: 30px;
+      }
+
+      .bookImg {
+        width: 300px;
+        height: 450px;
+        margin-right: 40px;
+        border: 5px solid #d3d3d3;
+        transition: all 0.5s ease;
+      }
+
+      .bookImg:hover {
+        transform: scale(1.1);
+        border-color: gray;
+      }
+
+      .bookInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .bookTitle {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .bookAuthor {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .bookDescription {
+        font-size: 20px;
+        margin-top: 10px;
+      }
+    
+   
+
+    /*  sidebar section */      
+      .sidebar {
+        background-color: #f1f1f1;
+        height: 100%;
+        width: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+
+      .sidebar a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+      }
+
+      .sidebar a:hover {
+        background-color: #ddd;
+      }
+
+      /*  styles for comments section */
+       .commentSection {
+        margin-top: 50px;
+        padding: 20px;
+        border: 2px solid #d3d3d3;
+      }
+
+      .commentSection h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .commentSection form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+      .commentSection label {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .commentSection input[type="text"],
+      .commentSection textarea {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #d3d3d3;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+
+      .commentSection input[type="submit"] {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .commentSection input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      .commentSection .comments {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .commentSection .comment {
+        margin-bottom: 20px;
+      }
+
+      .commentSection .comment h4 {
+        font-size: 20
+      }
+
+      .comments-section {
+       width: 80%;
+      margin: 0 auto;
+     }
+
+    </style>
+  </head>
+
+  <body>
+    <!--book details-->
+    <div class="bookDetails">
+      <img
+        class="bookImg"
+        alt="Predictably Irrational by Dan Ariely"
+        title="Predictably Irrational by Dan Ariely"
+        src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1255573980l/1713426._SX98_.jpg"
+      />
+      <div class="bookInfo">
+        <h1 class="bookTitle">Predictably Irrational by Dan Ariely</h1>
+        <h2 class="bookAuthor">Predictably Irrational by Dan Ariely</h2>
+        <p class="bookDescription">
+         Predictably Irrational: The Hidden Forces That Shape Our Decisions is a 2008 book<br> by Dan Ariely, in which he challenges readers' assumptions about making decisions <br> based on rational thought. Ariely explains, "My goal, by the end of this book, is to<br>  help you fundamentally rethink what makes you and the people around you tick. I hope<br>  to lead you there by presenting a wide range of scientific experiments, findings,<br>  and anecdotes that are in many cases quite amusing. Once you see how systematic <br> certain mistakes are�how we repeat them again and again�I think you will begin to learn how <br> <br> to avoid some of them". The book has been republished in a "revised & expanded edition".
+        </p>
+      </div>
+    </div>
+
+    <!-- Sidebar panel 
+    <div class="sidebar">
+      <a href="">Home</a>
+      <a href="#">History</a>
+      <a href="science.html">science </a>
+    </div>
+    -->
+    
+    <!--comments section-->
+    <div class="commentSection">
+  <h3>Comments</h3>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="comment">Comment:</label>
+    <textarea id="comment" name="comment" required></textarea><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <div class="comments">
+    <div class="comment">
+      <h4> hossam</h4>
+      <p>amazing!! </p>
+    </div>
+    <div class="comment">
+      <h4> mohammed</h4>
+      <p>nice book!</p>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+</html>

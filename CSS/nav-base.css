@@ -1,0 +1,100 @@
+/* Base styles that apply to all menus */
+.menu-section {
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid hsl(0, 0%, );
+}
+
+.menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+    background-color: #961b23;
+	/*background: hsl(0, 0%, 15%);*/
+}
+
+.menu li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: .6em 1em;
+}
+
+.menu li a:hover {
+	background: hsl(0, 0%, 25%);
+}
+
+
+
+@media screen and (min-width: 30em) {
+ 
+    .single-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .single-nav li {
+        flex: 1 0 auto;
+        text-align: center;
+    }
+    
+}
+
+
+/* Styles for social media menu */
+
+/* Find src URL and add in correct social media icon. */
+.social-menu li a:before {
+    font-family: 'Fontawesome';
+    -webkit-font-smoothing: antialiased;
+    content: '\f08e';
+}
+
+
+.social-menu li a[href*="facebook.com"]::before { content: '\f09a'; }
+
+.social-menu li a[href*="flickr.com"]::before { content: '\f16e'; }
+
+.social-menu li a[href*="instagram.com"]::before { content: '\f16d'; }
+
+.social-menu li a[href*="linkedin.com"]::before { content: '\f0e1'; }
+.social-menu li a[href*="pinterest.com"]::before { content: '\f0d2'; }
+.social-menu li a[href*="twitter.com"]::before { content: '\f099'; }
+.social-menu li a[href*="youtube.com"]::before { content: '\f167'; }
+
+
+/* Flexbox stuff */
+
+.social-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+
+
+.sidebar-menu {
+    padding-bottom: 1em;
+}
+
+.sidebar-menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar-menu a {
+	display: block;
+	padding: .4em 0;
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a:focus {
+	padding: .4em 1em;
+	background: hsl(0, 0%, 20%);
+	color: white;
+}
